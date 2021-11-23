@@ -8,8 +8,6 @@ function printIndices(items) {
   }
 }
 
-
-
 // 2. everyOtherItem
 function everyOtherItem(items) {
   // Replace this with your code

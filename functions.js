@@ -2,12 +2,13 @@
 
 // 1. isHometown
 function isHometown(town){
-    if (town === 'San Francisco') {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return town === 'San Francisco';
+    // if (town === 'San Francisco') {
+    //     return true;
+    // }
+    // else {
+    //     return false;
+    // }
 }
 
 // console.log(isHometown("San Francisco"))
@@ -21,7 +22,7 @@ function getFullName(firstName, lastName){
 
 // 3. calculateTotal
 function calculateTotal(basePrice, state, tax=0.05){
-    let subtotal = basePrice * (1 + tax);
+    const subtotal = basePrice * (1 + tax);
     let fee = 0;
     if (state === 'CA'){
         fee = 0.03 * subtotal;

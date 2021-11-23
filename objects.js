@@ -4,7 +4,6 @@
 function countWords(phrase) {
   const wordCounts = {}
   let words = phrase.split(" ")
-  console.log(words)
   for (const word in words) {
     let newWord = words[word];
     if (wordCounts.hasOwnProperty(newWord)){
@@ -32,7 +31,7 @@ function getMelonsAtPrice(price) {
       return melonPrices[key];
     }
   }
-  //can't return none?
+  return null;
 }
 
-console.log(getMelonsAtPrice(2.50))
+console.log(getMelonsAtPrice(2.95))
